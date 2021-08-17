@@ -335,7 +335,7 @@ function cursorCB(el,a,l,idx){//border: black solid 1px;
 
 el.style.left=(l.to[0]-l.from[0])*a+l.from[0]+"px";
    el.style.top=(l.to[1]-l.from[1])*a+l.from[1]+"px";
-   if(l.firstSkip[idx]){
+   if(l.skip){
     for (var i = 0; i < 200; i++) {
       configAnimate(i,rand)
     }
